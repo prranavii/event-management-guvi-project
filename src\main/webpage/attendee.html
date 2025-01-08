@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendee Booking</title>
+  <link rel="stylesheet" href="attendee.css">
+</head>
+<body>
+<div class="container">
+  <h1>Event Booking</h1>
+  <h2>Available Events</h2>
+  <table id="event-table">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Venue</th>
+      <th>Ticket Price</th>
+      <th>Seats Available</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Event rows will be dynamically added here -->
+    </tbody>
+  </table>
+
+  <form id="booking-form" style="display:none;">
+    <h2>Book Tickets</h2>
+    <label for="attendee-name">Your Name:</label>
+    <input type="text" id="attendee-name" name="attendee-name" required>
+
+    <label for="number-of-tickets">Number of Tickets:</label>
+    <input type="number" id="number-of-tickets" name="number-of-tickets" min="1" required>
+
+    <input type="hidden" id="event-id" name="event-id">
+    <button type="submit">Book Tickets</button>
+  </form>
+</div>
+
+<script src="attendee.js"></script>
+</body>
+</html>

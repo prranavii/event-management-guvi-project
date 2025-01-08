@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="signup.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+<div class="border">
+    <div class="signup-container">
+        <h2>Signup Form</h2>
+        <form action="/signup" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number" required>
+
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="Admin">Admin</option>
+                <option value="Event Organizer">Event Organizer</option>
+                <option value="Attendee">Attendee</option>
+            </select>
+
+
+
+            <button type="submit">SUBMIT</button>
+        </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>com.event.admin.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrganizerServlet</servlet-name>
+        <servlet-class>com.event.organizer.OrganizerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrganizerServlet</servlet-name>
+        <url-pattern>/organizer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AttendeeServlet</servlet-name>
+        <servlet-class>com.event.attendee.AttendeeServlet</servlet-class>
+    </servlet>
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/jsp/error.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/jsp/error.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/jsp/error.jsp</location>
+    </error-page>
+
+    <servlet-mapping>
+        <servlet-name>AttendeeServlet</servlet-name>
+        <url-pattern>/attendee</url-pattern>
+    </servlet-mapping>
+</web-app>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+<servlet>
+    <servlet-name>UserRegistrationServlet</servlet-name>
+    <servlet-class>com.example.UserRegistrationServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UserRegistrationServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>UserProfileServlet</servlet-name>
+    <servlet-class>com.example.UserProfileServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UserProfileServlet</servlet-name>
+    <url-pattern>/profile</url-pattern>
+</servlet-mapping>
+</web-app>
+<web-app>
+<servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>event.servlet.RegisterServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ProfileServlet</servlet-name>
+    <servlet-class>event.servlet.ProfileServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ProfileServlet</servlet-name>
+    <url-pattern>/profile</url-pattern>
+</servlet-mapping>
+</web-app>
